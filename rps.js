@@ -35,8 +35,8 @@ function playGame(playerMove){
 
   // Show result with images
   document.getElementById("result").innerHTML = `
-    <p>You chose: <img src="${playerMove.toLowerCase()}.png" height="40"></p>
-    <p>Computer chose: <img src="${computerMove.toLowerCase()}.png" height="40"></p>
+    <p>You chose: <img src="${playerMove.toLowerCase()}-emoji.png" height="40"></p>
+    <p>Computer chose: <img src="${computerMove.toLowerCase()}-emoji.png" height="40"></p>
     <p>${result}</p>
   `;
 
@@ -60,3 +60,4 @@ function updateScoreBoard(){
   document.getElementById("score").innerHTML = 
     `Wins: ${score.wins} | Losses: ${score.losses} | Draws: ${score.draws}`;
 }
+
